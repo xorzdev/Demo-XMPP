@@ -5,13 +5,14 @@ import com.gavin.demo067_xmpp.db.dao.IMMessageDao;
 import com.gavin.demo067_xmpp.model.IMMessage;
 import com.gavin.demo067_xmpp.utils.L;
 import com.gavin.demo067_xmpp.xmpp.XMPPConnectManager;
-import com.gavin.demo067_xmpp.xmpp.XMPPManager;
 
 import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by Administrator on 2016/7/18.
+ * 这里是萌萌哒注释君
+ *
+ * @author gavin.xiong 2016/9/19
  */
 public class IMMessageService extends BaseService<IMMessage, Long> {
     public IMMessageService(IMMessageDao dao) {
