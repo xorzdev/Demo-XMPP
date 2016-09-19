@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="12dp"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingTop="12dp"
+    tools:ignore="UnusedAttribute">
+
+    <com.gavin.demo067_xmpp.widget.listvariants.CircularContactView
+        android:id="@+id/ccv_head"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/list_item__contact_head_size"
+        android:layout_height="@dimen/list_item__contact_head_size"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/ccv_head"
+        android:layout_toRightOf="@id/ccv_head"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingEnd="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingStart="10dp"
+            android:singleLine="true"
+            android:text="tv_name"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,NewApi" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingEnd="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingStart="10dp"
+            android:singleLine="true"
+            android:text="tv_content"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,NewApi" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:paddingEnd="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingStart="10dp"
+            android:singleLine="true"
+            android:text="tv_time"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText,NewApi" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:paddingEnd="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingStart="10dp"
+            android:singleLine="true"
+            android:text="tv_count"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText,NewApi" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
